@@ -13,7 +13,7 @@ def click():
         win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, x, y, 0, 0)
         time.sleep(0.02)
         win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, x, y, 0, 0)
-        time.sleep(3)
+        time.sleep(1)
 
 
 def stop():
