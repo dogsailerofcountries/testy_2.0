@@ -16,9 +16,5 @@ def click():
         win32api.mouse_event(win32con.MOUSEVENTF_LEFTUP, x, y, 0, 0)
 
 
-with pynput.keyboard.GlobalHotKeys(
-    {
-        "<ctrl>+<alt>+f": click(),
-    }
-) as h:
+with pynput.keyboard.GlobalHotKeys({"<ctrl>+<alt>+f": click}) as h:
     h.join()
