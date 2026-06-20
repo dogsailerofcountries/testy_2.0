@@ -19,7 +19,5 @@ def stop():
     running = False
 
 
-with pynput.keyboard.GlobalHotKeys(
-    {"<ctrl>+<alt>+f": click, "<ctrl>+<alt>+g": stop}
-) as h:
+with pynput.keyboard.GlobalHotKeys({"<ctrl>+<alt>+f": click}) as h:
     h.join()
