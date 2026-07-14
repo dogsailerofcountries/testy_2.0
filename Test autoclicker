@@ -1,5 +1,0 @@
-import pynput
-import time
-while not pynput.keyboard.Press(<alt>+<ctrl>+f)
-    time.sleep(0.01)
-print("hello")
